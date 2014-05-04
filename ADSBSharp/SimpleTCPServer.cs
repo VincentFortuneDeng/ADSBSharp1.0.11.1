@@ -74,7 +74,7 @@ namespace ADSBSharp
                     _listener = new TcpListener(IPAddress.Any, _port);
                     _listener.Start();
                     _listener.BeginAcceptTcpClient(TcpClientConnectCallback, _listener);
-                    Console.WriteLine("Listening on {0}", _listener.LocalEndpoint);
+                    Console.WriteLine("侦听在 {0}", _listener.LocalEndpoint);
                 }
                 catch
                 {
@@ -175,7 +175,7 @@ namespace ADSBSharp
             }
 
             _listenerThreadRunning = false;
-            Console.WriteLine("TCP Server loop exited...");
+            Console.WriteLine("TCP Server 循环已退出...");
         }
 
         private void CloseDead()
@@ -186,7 +186,7 @@ namespace ADSBSharp
                 {
                     try
                     {
-                        Console.WriteLine("Removing client from {0}", client.Client.RemoteEndPoint);
+                        Console.WriteLine("删除客户端从 {0}", client.Client.RemoteEndPoint);
                         if (client.Connected)
                         {
                             var stream = client.GetStream();
@@ -242,7 +242,7 @@ namespace ADSBSharp
                 }
                 _clientConnectedEvent.Set();
 
-                Console.WriteLine("New client from {0}. {1} clients now connected.", client.Client.RemoteEndPoint, _tcpClients.Count);
+                Console.WriteLine("新客户端来自 {0}. {1} 客户端目前已连接.", client.Client.RemoteEndPoint, _tcpClients.Count);
 
                 try
                 {

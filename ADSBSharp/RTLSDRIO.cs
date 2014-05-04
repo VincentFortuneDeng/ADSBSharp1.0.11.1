@@ -51,9 +51,9 @@ namespace ADSBSharp
             }
             if (devices.Length > 0)
             {
-                throw new ApplicationException(devices.Length + " compatible devices have been found but are all busy");
+                throw new ApplicationException(devices.Length + " 兼容设备已经被发现但是正忙");
             }
-            throw new ApplicationException("No compatible devices found");
+            throw new ApplicationException("没有兼容设备被发现");
         }
 
         public void Close()
@@ -71,7 +71,7 @@ namespace ADSBSharp
         {         
             if (_rtlDevice == null)
             {
-                throw new ApplicationException("No device selected");
+                throw new ApplicationException("没有设备被选择");
             }
             _callback = callback;
             try

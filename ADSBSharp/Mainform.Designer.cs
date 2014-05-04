@@ -69,25 +69,25 @@
             // 
             this.deviceComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.deviceComboBox.FormattingEnabled = true;
-            this.deviceComboBox.Location = new System.Drawing.Point(15, 33);
+            this.deviceComboBox.Location = new System.Drawing.Point(15, 30);
             this.deviceComboBox.Name = "deviceComboBox";
-            this.deviceComboBox.Size = new System.Drawing.Size(240, 21);
+            this.deviceComboBox.Size = new System.Drawing.Size(240, 20);
             this.deviceComboBox.TabIndex = 0;
             this.deviceComboBox.SelectedIndexChanged += new System.EventHandler(this.deviceComboBox_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 16);
+            this.label1.Location = new System.Drawing.Point(15, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Device";
+            this.label1.Text = "设备";
             // 
             // tunerGainTrackBar
             // 
             this.tunerGainTrackBar.Enabled = false;
-            this.tunerGainTrackBar.Location = new System.Drawing.Point(6, 119);
+            this.tunerGainTrackBar.Location = new System.Drawing.Point(6, 110);
             this.tunerGainTrackBar.Maximum = 10000;
             this.tunerGainTrackBar.Name = "tunerGainTrackBar";
             this.tunerGainTrackBar.Size = new System.Drawing.Size(258, 45);
@@ -97,20 +97,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 103);
+            this.label2.Location = new System.Drawing.Point(15, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.Size = new System.Drawing.Size(47, 12);
             this.label2.TabIndex = 22;
-            this.label2.Text = "RF Gain";
+            this.label2.Text = "RF 增益";
             // 
             // tunerAgcCheckBox
             // 
             this.tunerAgcCheckBox.AutoSize = true;
             this.tunerAgcCheckBox.Checked = true;
             this.tunerAgcCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.tunerAgcCheckBox.Location = new System.Drawing.Point(15, 83);
+            this.tunerAgcCheckBox.Location = new System.Drawing.Point(15, 77);
             this.tunerAgcCheckBox.Name = "tunerAgcCheckBox";
-            this.tunerAgcCheckBox.Size = new System.Drawing.Size(79, 17);
+            this.tunerAgcCheckBox.Size = new System.Drawing.Size(78, 16);
             this.tunerAgcCheckBox.TabIndex = 2;
             this.tunerAgcCheckBox.Text = "Tuner AGC";
             this.tunerAgcCheckBox.UseVisualStyleBackColor = true;
@@ -118,9 +118,9 @@
             // 
             // gainLabel
             // 
-            this.gainLabel.Location = new System.Drawing.Point(194, 103);
+            this.gainLabel.Location = new System.Drawing.Point(194, 95);
             this.gainLabel.Name = "gainLabel";
-            this.gainLabel.Size = new System.Drawing.Size(68, 13);
+            this.gainLabel.Size = new System.Drawing.Size(68, 12);
             this.gainLabel.TabIndex = 26;
             this.gainLabel.Text = "1000dB";
             this.gainLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -128,7 +128,7 @@
             // 
             // frequencyCorrectionNumericUpDown
             // 
-            this.frequencyCorrectionNumericUpDown.Location = new System.Drawing.Point(172, 169);
+            this.frequencyCorrectionNumericUpDown.Location = new System.Drawing.Point(172, 156);
             this.frequencyCorrectionNumericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -140,7 +140,7 @@
             0,
             -2147483648});
             this.frequencyCorrectionNumericUpDown.Name = "frequencyCorrectionNumericUpDown";
-            this.frequencyCorrectionNumericUpDown.Size = new System.Drawing.Size(83, 20);
+            this.frequencyCorrectionNumericUpDown.Size = new System.Drawing.Size(83, 21);
             this.frequencyCorrectionNumericUpDown.TabIndex = 4;
             this.frequencyCorrectionNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.frequencyCorrectionNumericUpDown.ValueChanged += new System.EventHandler(this.frequencyCorrectionNumericUpDown_ValueChanged);
@@ -148,17 +148,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 171);
+            this.label4.Location = new System.Drawing.Point(12, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 13);
+            this.label4.Size = new System.Drawing.Size(89, 12);
             this.label4.TabIndex = 28;
-            this.label4.Text = "Frequency correction (ppm)";
+            this.label4.Text = "频率校正 (ppm)";
             // 
             // tunerTypeLabel
             // 
-            this.tunerTypeLabel.Location = new System.Drawing.Point(169, 16);
+            this.tunerTypeLabel.Location = new System.Drawing.Point(169, 15);
             this.tunerTypeLabel.Name = "tunerTypeLabel";
-            this.tunerTypeLabel.Size = new System.Drawing.Size(93, 13);
+            this.tunerTypeLabel.Size = new System.Drawing.Size(93, 12);
             this.tunerTypeLabel.TabIndex = 29;
             this.tunerTypeLabel.Text = "E4000";
             this.tunerTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -166,9 +166,9 @@
             // rtlAgcCheckBox
             // 
             this.rtlAgcCheckBox.AutoSize = true;
-            this.rtlAgcCheckBox.Location = new System.Drawing.Point(15, 60);
+            this.rtlAgcCheckBox.Location = new System.Drawing.Point(15, 55);
             this.rtlAgcCheckBox.Name = "rtlAgcCheckBox";
-            this.rtlAgcCheckBox.Size = new System.Drawing.Size(72, 17);
+            this.rtlAgcCheckBox.Size = new System.Drawing.Size(66, 16);
             this.rtlAgcCheckBox.TabIndex = 1;
             this.rtlAgcCheckBox.Text = "RTL AGC";
             this.rtlAgcCheckBox.UseVisualStyleBackColor = true;
@@ -186,21 +186,21 @@
             this.groupBox1.Controls.Add(this.frequencyCorrectionNumericUpDown);
             this.groupBox1.Controls.Add(this.tunerAgcCheckBox);
             this.groupBox1.Controls.Add(this.gainLabel);
-            this.groupBox1.Location = new System.Drawing.Point(12, 142);
+            this.groupBox1.Location = new System.Drawing.Point(12, 131);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 202);
+            this.groupBox1.Size = new System.Drawing.Size(270, 186);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "RTL-SDR Control";
+            this.groupBox1.Text = "RTL-SDR 控制";
             // 
             // startBtn
             // 
             this.startBtn.Enabled = false;
-            this.startBtn.Location = new System.Drawing.Point(12, 12);
+            this.startBtn.Location = new System.Drawing.Point(12, 11);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(75, 23);
+            this.startBtn.Size = new System.Drawing.Size(75, 21);
             this.startBtn.TabIndex = 0;
-            this.startBtn.Text = "Start";
+            this.startBtn.Text = "开始";
             this.startBtn.UseVisualStyleBackColor = true;
             this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
@@ -212,25 +212,25 @@
             this.groupBox2.Controls.Add(this.confidenceNumericUpDown);
             this.groupBox2.Controls.Add(this.framesPerSecLbl);
             this.groupBox2.Controls.Add(this.fpsLabel);
-            this.groupBox2.Location = new System.Drawing.Point(12, 67);
+            this.groupBox2.Location = new System.Drawing.Point(12, 62);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(270, 69);
+            this.groupBox2.Size = new System.Drawing.Size(270, 64);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Decoder";
+            this.groupBox2.Text = "解码器";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(104, 16);
+            this.label7.Location = new System.Drawing.Point(104, 15);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 13);
+            this.label7.Size = new System.Drawing.Size(59, 12);
             this.label7.TabIndex = 41;
-            this.label7.Text = "Timeout (sec)";
+            this.label7.Text = "超时 (秒)";
             // 
             // timeoutNumericUpDown
             // 
-            this.timeoutNumericUpDown.Location = new System.Drawing.Point(104, 34);
+            this.timeoutNumericUpDown.Location = new System.Drawing.Point(104, 31);
             this.timeoutNumericUpDown.Maximum = new decimal(new int[] {
             500,
             0,
@@ -242,7 +242,7 @@
             0,
             0});
             this.timeoutNumericUpDown.Name = "timeoutNumericUpDown";
-            this.timeoutNumericUpDown.Size = new System.Drawing.Size(71, 20);
+            this.timeoutNumericUpDown.Size = new System.Drawing.Size(71, 21);
             this.timeoutNumericUpDown.TabIndex = 40;
             this.timeoutNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.timeoutNumericUpDown.Value = new decimal(new int[] {
@@ -255,15 +255,15 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 16);
+            this.label5.Location = new System.Drawing.Point(15, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.Size = new System.Drawing.Size(29, 12);
             this.label5.TabIndex = 36;
-            this.label5.Text = "Confidence";
+            this.label5.Text = "确认";
             // 
             // confidenceNumericUpDown
             // 
-            this.confidenceNumericUpDown.Location = new System.Drawing.Point(15, 34);
+            this.confidenceNumericUpDown.Location = new System.Drawing.Point(15, 31);
             this.confidenceNumericUpDown.Maximum = new decimal(new int[] {
             20,
             0,
@@ -275,7 +275,7 @@
             0,
             0});
             this.confidenceNumericUpDown.Name = "confidenceNumericUpDown";
-            this.confidenceNumericUpDown.Size = new System.Drawing.Size(71, 20);
+            this.confidenceNumericUpDown.Size = new System.Drawing.Size(71, 21);
             this.confidenceNumericUpDown.TabIndex = 0;
             this.confidenceNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.confidenceNumericUpDown.Value = new decimal(new int[] {
@@ -288,18 +288,18 @@
             // framesPerSecLbl
             // 
             this.framesPerSecLbl.AutoSize = true;
-            this.framesPerSecLbl.Location = new System.Drawing.Point(192, 16);
+            this.framesPerSecLbl.Location = new System.Drawing.Point(192, 15);
             this.framesPerSecLbl.Name = "framesPerSecLbl";
-            this.framesPerSecLbl.Size = new System.Drawing.Size(63, 13);
+            this.framesPerSecLbl.Size = new System.Drawing.Size(35, 12);
             this.framesPerSecLbl.TabIndex = 33;
-            this.framesPerSecLbl.Text = "Frames/sec";
+            this.framesPerSecLbl.Text = "帧/秒";
             // 
             // fpsLabel
             // 
             this.fpsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fpsLabel.Location = new System.Drawing.Point(195, 34);
+            this.fpsLabel.Location = new System.Drawing.Point(195, 31);
             this.fpsLabel.Name = "fpsLabel";
-            this.fpsLabel.Size = new System.Drawing.Size(60, 20);
+            this.fpsLabel.Size = new System.Drawing.Size(60, 18);
             this.fpsLabel.TabIndex = 34;
             this.fpsLabel.Text = "FPS";
             this.fpsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -312,7 +312,7 @@
             // 
             // portNumericUpDown
             // 
-            this.portNumericUpDown.Location = new System.Drawing.Point(184, 15);
+            this.portNumericUpDown.Location = new System.Drawing.Point(184, 14);
             this.portNumericUpDown.Maximum = new decimal(new int[] {
             65536,
             0,
@@ -324,7 +324,7 @@
             0,
             0});
             this.portNumericUpDown.Name = "portNumericUpDown";
-            this.portNumericUpDown.Size = new System.Drawing.Size(98, 20);
+            this.portNumericUpDown.Size = new System.Drawing.Size(98, 21);
             this.portNumericUpDown.TabIndex = 1;
             this.portNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.portNumericUpDown.Value = new decimal(new int[] {
@@ -337,11 +337,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(152, 17);
+            this.label3.Location = new System.Drawing.Point(152, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 34;
-            this.label3.Text = "Port";
+            this.label3.Text = "端口";
             // 
             // notifyIcon
             // 
@@ -353,37 +353,37 @@
             // shareCb
             // 
             this.shareCb.AutoSize = true;
-            this.shareCb.Location = new System.Drawing.Point(12, 44);
+            this.shareCb.Location = new System.Drawing.Point(12, 41);
             this.shareCb.Name = "shareCb";
-            this.shareCb.Size = new System.Drawing.Size(128, 17);
+            this.shareCb.Size = new System.Drawing.Size(114, 16);
             this.shareCb.TabIndex = 35;
-            this.shareCb.Text = "Share with ADSBHub";
+            this.shareCb.Text = "使用ADSBHub共享";
             this.shareCb.UseVisualStyleBackColor = true;
             this.shareCb.CheckedChanged += new System.EventHandler(this.shareCb_CheckedChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(149, 45);
+            this.label6.Location = new System.Drawing.Point(149, 42);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.Size = new System.Drawing.Size(29, 12);
             this.label6.TabIndex = 36;
-            this.label6.Text = "Host";
+            this.label6.Text = "主机";
             // 
             // hostnameTb
             // 
             this.hostnameTb.Enabled = false;
-            this.hostnameTb.Location = new System.Drawing.Point(184, 41);
+            this.hostnameTb.Location = new System.Drawing.Point(184, 38);
             this.hostnameTb.Name = "hostnameTb";
-            this.hostnameTb.Size = new System.Drawing.Size(98, 20);
+            this.hostnameTb.Size = new System.Drawing.Size(98, 21);
             this.hostnameTb.TabIndex = 37;
             this.hostnameTb.Text = "sdrsharp.com";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 357);
+            this.ClientSize = new System.Drawing.Size(294, 330);
             this.Controls.Add(this.hostnameTb);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.shareCb);
@@ -397,7 +397,7 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "ADSB#";
+            this.Text = "ADS-B接收器";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.tunerGainTrackBar)).EndInit();

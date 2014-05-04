@@ -19,7 +19,7 @@ namespace ADSBSharp
         {
             InitializeComponent();
 
-            Text = "ADSB# v" + Assembly.GetExecutingAssembly().GetName().Version;
+            Text = "ADS-B接收器 v" + Assembly.GetExecutingAssembly().GetName().Version;
 
             _decoder.FrameReceived += delegate(byte[] frame, int length)
                                           {
@@ -62,7 +62,7 @@ namespace ADSBSharp
                 StopDecoding();
             }
 
-            startBtn.Text = _isDecoding ? "Stop" : "Start";
+            startBtn.Text = _isDecoding ? "停止" : "开始";
             deviceComboBox.Enabled = !_rtlDevice.Device.IsStreaming;
             portNumericUpDown.Enabled = !_rtlDevice.Device.IsStreaming;
             shareCb.Enabled = !_rtlDevice.Device.IsStreaming;
@@ -97,7 +97,7 @@ namespace ADSBSharp
                 {
                     deviceComboBox.SelectedIndex = -1;
                     _initialized = false;
-                    MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(this, ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
                 ConfigureDevice();
@@ -205,7 +205,7 @@ namespace ADSBSharp
             catch (Exception e)
             {
                 StopDecoding();
-                MessageBox.Show("Unable to start networking\n" + e.Message);
+                MessageBox.Show("无法启动网络连接\n" + e.Message);
                 return;
             }
 
@@ -216,7 +216,7 @@ namespace ADSBSharp
             catch (Exception e)
             {
                 StopDecoding();
-                MessageBox.Show("Unable to start RTL device\n" + e.Message);
+                MessageBox.Show("无法启动RTL 设备\n" + e.Message);
                 return;
             }
 
@@ -269,7 +269,7 @@ namespace ADSBSharp
 
         private void portNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            notifyIcon.Text = Text + " on port " + portNumericUpDown.Value;
+            notifyIcon.Text = Text + " 端口 " + portNumericUpDown.Value;
         }
 
         private void MainForm_Resize(object sender, EventArgs e)

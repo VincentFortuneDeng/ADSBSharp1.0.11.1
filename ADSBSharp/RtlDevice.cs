@@ -44,7 +44,7 @@ namespace ADSBSharp
             var r = NativeMethods.rtlsdr_open(out _dev, _index);
             if (r != 0)
             {
-                throw new ApplicationException("Cannot open RTL device. Is the device locked somewhere?");
+                throw new ApplicationException("无法打开 RTL 设备. 设备是否在哪被锁定?");
             }
             var count = _dev == IntPtr.Zero ? 0 : NativeMethods.rtlsdr_get_tuner_gains(_dev, null);
             if (count < 0)
@@ -84,31 +84,31 @@ namespace ADSBSharp
         {
             if (_worker != null)
             {
-                throw new ApplicationException("Already running");
+                throw new ApplicationException("已经运行");
             }
 
             var r = NativeMethods.rtlsdr_set_center_freq(_dev, _centerFrequency);
             if (r != 0)
             {
-                throw new ApplicationException("Cannot access RTL device");
+                throw new ApplicationException("无法访问 RTL 设备");
             }
             r = NativeMethods.rtlsdr_set_tuner_gain_mode(_dev, _useTunerAGC ? 0 : 1);
             if (r != 0)
             {
-                throw new ApplicationException("Cannot access RTL device");
+                throw new ApplicationException("无法访问 RTL 设备");
             }
             if (!_useTunerAGC)
             {
                 r = NativeMethods.rtlsdr_set_tuner_gain(_dev, _tunerGain);
                 if (r != 0)
                 {
-                    throw new ApplicationException("Cannot access RTL device");
+                    throw new ApplicationException("无法访问 RTL 设备");
                 }
             }
             r = NativeMethods.rtlsdr_reset_buffer(_dev);
             if (r != 0)
             {
-                throw new ApplicationException("Cannot access RTL device");
+                throw new ApplicationException("无法访问 RTL 设备");
             }
 
             _worker = new Thread(StreamProc);
@@ -166,7 +166,7 @@ namespace ADSBSharp
                 {
                     if (NativeMethods.rtlsdr_set_center_freq(_dev, _centerFrequency) != 0)
                     {
-                        throw new ArgumentException("The frequency cannot be set: " + value);
+                        throw new ArgumentException("频率不能被设置: " + value);
                     }
                 }
             }
